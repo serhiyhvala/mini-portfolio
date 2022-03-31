@@ -201,8 +201,9 @@ img {
 .profile__buttons-small {
     column-gap: .25rem;
 }
+
 /* Buttons */
-.button{
+.button {
     display: inline-flex;
     align-items: center;
     column-gap: .5rem;
@@ -213,20 +214,54 @@ img {
     transition: .3s;
     box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), .25);
 }
-.button i{
+
+.button i {
     font-size: 1.25rem;
 }
-.button:hover{
+
+.button:hover {
     background-color: var(--first-color-alt);
 }
-.button__small{
+
+.button__small {
     padding: .75rem;
     box-shadow: none;
 }
-.button__gray{
+
+.button__gray {
     background-color: var(--text-color-lighten);
     color: var(--title-color);
 }
-.button__gray:hover{
+
+.button__gray:hover {
     background-color: var(--text-color-light);
+}
+
+.filters__content {
+    margin: 2rem 0 2.5rem;
+    background-color: var(--text-color-lighten);
+    padding: .375rem;
+    border-radius: .75rem;
+    display: flex;
+    justify-content: space-between;
+    column-gap: .5rem;
+}
+
+.filters__button {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+    font-family: var(--body-font);
+    font-weight: 500;
+    border-radius: .75rem;
+    cursor: pointer;
+    background-color: transparent;
+    transition: .3s;
+}
+
+.filters__button:hover {
+    background-color: var(--body-color);
 }
